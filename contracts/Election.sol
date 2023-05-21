@@ -33,6 +33,7 @@ contract USElection is Ownable {
         onlyOwner
         onlyActiveElection
     {
+        // yes
         require(result.stateSeats > 0, "States must have at least 1 seat");
         require(
             result.votesBiden != result.votesTrump,
